@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "mhead":"../../components/head",
+    "ripple":"../../components/ripple",
+    "datepicker":"../../components/datepicker",
+    "minput":"../../components/input",
+    "mselect":"../../components/select",
+    "imgUpload":"../../components/upload"
+  }
+}
