@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<mhead title="标题" hasback="1" />
+<ripple>涟漪</ripple>
+<datepicker/>
+<minput height="56" fullw="1" title="账号"/>
+
+<minput height="56" fullw="1" title="账号2" placeholder="123">
+    <view class="iconfont icon-arrow-left" style="position: absolute;top: 0;right: 0;"></view>
+</minput>
+
+<mselect height="56" fullw="1" title="城市"/>
+
+<!-- 上传 -->
+<imgUpload title='上传图片' src="{{src}}" bindsucc="uploadSucc" bindtmp="uploadTmp" witdh="300" height="150" hasdel="0" idx="0"/>
+<imgUpload title='上传图片' src="{{src}}" bindsucc="uploadSucc" bindtmp="uploadTmp" witdh="300" height="150" hasdel="1" idx="1"/>
+<canvas canvas-id="micro" type="2d" style="width:{{w+'rpx'}};height: {{h+'rpx'}};position:fixed;z-index:-1;"></canvas>
