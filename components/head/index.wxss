@@ -1,0 +1,43 @@
+@import "../../app.wxss";
+.mhead {
+  height: 100rpx;
+  width: 100vw;
+  position: relative;
+}
+
+.mhead_box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 72rpx;
+  line-height: 72rpx;
+}
+
+.iconfont {
+  font-size: 56rpx;
+  width: 72rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  font-weight: lighter;
+  color: #333;
+  background: transparent;
+  text-align: center;
+}
+
+.mhead_title {
+  position: absolute;
+  bottom: 0;
+  left: 72rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  width: calc(100vw - 144rpx);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.light .iconfont,
+.light .mhead_title {
+  color: #fff;
+}

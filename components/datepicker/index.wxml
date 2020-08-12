@@ -1,0 +1,29 @@
+<view>
+    <ripple noshadow="1" background="transparent" height="68" fullw="1">
+        <view class="show_text" bindtap="choose">
+            <view  class="show_text_title">{{title}}：</view>
+            {{yearo}}年{{montho}}月{{dayo}}日
+        </view>
+    </ripple>
+    <view class="date_box" wx:if="{{visiable}}">
+        <view class="date_choose animated {{ani?'fadeInUp':'fadeOutDown'}}" style="padding-bottom: {{bottom}};">
+            <view class="date_confirm_box">
+                <button class="btns" bindtap="close">取消</button>
+                <button class="btns" bindtap="confirm">确定</button>
+                {{yearn}}年{{monthn}}月{{dayn}}日
+            </view>
+            <picker-view class="date_box_inner" indicator-style="height: 72rpx;" value="{{value}}"
+                bindchange="bindChange">
+                <picker-view-column>
+                    <view wx:for="{{years}}" wx:key="*this" class="date_item">{{item}}年</view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view wx:for="{{months}}" wx:key="*this" class="date_item">{{item}}月</view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view wx:for="{{days}}" wx:key="*this" class="date_item">{{item}}日</view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+    </view>
+</view>

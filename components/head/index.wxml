@@ -1,0 +1,9 @@
+<!-- 全屏时头部 -->
+<view class="mhead {{light?'light':''}}" style="{{style}}background:{{background}}">
+    <view class="mhead_box">
+        <ripple wx:if="{{hasback}}" height="72" width="72" noshadow="1" background="transparent" light="1" radius="50%" bindtap="goback">
+            <view class="iconfont icon-arrow-left"></view>
+        </ripple>
+        <view class="mhead_title">{{title}}</view>
+    </view>
+</view>

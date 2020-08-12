@@ -1,0 +1,14 @@
+<!-- input -->
+<view class="minput" style="width:{{fullw == 1?'100%':(width+'rpx')}};">
+    <ripple noshadow="1" background="transparent" height="68" fullw="1">
+        <view class="minput_title">
+            {{title}}：
+        </view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{objectArray}}" range-key="name">
+            <view class="picker">
+                {{objectArray[index].name}}
+            </view>
+        </picker>
+    </ripple>
+    <slot></slot>
+</view>

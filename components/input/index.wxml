@@ -1,0 +1,10 @@
+<!-- input -->
+<view class="minput" style="width:{{fullw == 1?'100%':(width+'rpx')}};">
+    <ripple noshadow="1" background="transparent" height="68" fullw="1">
+        <view class="minput_title">
+            {{title}}：
+        </view>
+        <input type="text" class="ipt" placeholder="{{placeholder}}" placeholder-class="pl_ipt" />
+    </ripple>
+    <slot></slot>
+</view>

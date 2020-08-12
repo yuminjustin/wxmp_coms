@@ -1,0 +1,21 @@
+<!-- 上传&压缩 -->
+<!-- 父级需设置 -->
+<!-- <canvas canvas-id="micro" type="2d" style="width:{{w+'rpx'}};height: {{h+'rpx'}};position:fixed;z-index:-1;"></canvas> -->
+
+<view class="ups" style="width: {{width+'rpx'}};height:{{(height+68)+'rpx'}};">
+    <ripple fullw="1" fullh="1" noshadow="1" background="transparent">
+        <view class="iconfont icon-close" wx:if="{{hasdel == 1}}" bindtap="remove"></view>
+        <view class="up_box" style="width:{{(width-4)+'rpx'}};height:{{height+'rpx'}};" wx:if="{{src}}"
+            bindtap="uploadimg">
+            <image class="up_box_img idx" src="{{src}}"></image>
+        </view>
+        <view class="up_box" style="width:{{(width-4)+'rpx'}};height:{{height+'rpx'}};" wx:elif="{{img}}"
+            bindtap="uploadimg">
+            <image class="up_box_img" src="{{img}}"></image>
+        </view>
+        <view class="up_box" style="width:{{(width-4)+'rpx'}};height:{{height+'rpx'}};line-height:{{height+'rpx'}};"
+            wx:else bindtap="uploadimg"> + </view>
+        <view class="up_text {{sub?'up_text_mini':''}}">{{title}}</view>
+        <view class="up_text up_text_mini mini" wx:if="sub">{{sub}}</view>
+    </ripple>
+</view>

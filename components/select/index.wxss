@@ -1,0 +1,4 @@
+@import "../input/index.wxss";
+.picker {
+    font-size: 28rpx;
+}

@@ -1,0 +1,55 @@
+@import "../../app.wxss";
+.ups {
+  float: left;
+  margin: 16rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.ups .iconfont {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  font-size: 28rpx;
+  color: #fff;
+  background: #f00;
+  font-weight: bold;
+  height: 36rpx;
+  width: 36rpx;
+  text-align: center;
+  line-height: 36rpx;
+}
+
+.up_box {
+  border: dashed 2rpx #ccc;
+  margin: 0 auto;
+  font-size: 68rpx;
+  text-align: center;
+  line-height: 94rpx;
+  color: #ccc;
+  overflow: hidden;
+}
+
+.up_box_img {
+  width: 104rpx !important;
+  height: 104rpx !important;
+}
+
+.up_text {
+  color: #999;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24rpx;
+  line-height: 68rpx;
+}
+
+.up_text_mini {
+  line-height: 32rpx;
+}
+
+.up_text_mini.mini {
+  font-size: 20rpx;
+}

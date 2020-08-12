@@ -1,0 +1,5 @@
+<!-- 涟漪 -->
+<view class="paper {{noshadow?'':'shadow'}}" bindtap="taped" style="width:{{fullw == 1?'100%':(width+'rpx')}};height:{{fullh == 1?'100%':(height+'rpx')}};background:{{background}};border-radius:{{radius}}">
+    <slot></slot>
+    <view class="ripple {{ani}} {{light?'light':'dark'}}" style="top:{{top}}rpx;left:{{left}}rpx;"></view>
+</view>
